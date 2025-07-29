@@ -1,27 +1,26 @@
-
-};
 <!DOCTYPE html>
 <html lang="ar">
 <head>
-  <meta charset="UTF-8">
-  <title>منصة Sham Webs – قريبًا!</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ShamWebs</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div class="container">
-    <h1>🚀 ترقّب إطلاق منصة Sham Webs</h1>
-    <p>منصة متعددة المتاجر الإلكترونية تربطك بعالم التجارة الرقمية</p>
+  <section class="hero">
+    <div class="overlay">
+      <img src="logo-white.png" alt="شعار ShamWebs" class="logo" />
+      <h1>ShamWebs - ثورة جديدة في عالم التسوق الرقمي</h1>
+      <p>انطلاق الموقع الرسمي خلال...</p>
+      <div id="countdown"></div>
 
-    <div id="countdown"></div>
+      <form class="signup-form">
+        <input type="text" placeholder="رقم الهاتف أو البريد الإلكتروني" required />
+        <button type="submit">سجّل الآن</button>
+      </form>
+    </div>
+  </section>
 
-    <form id="signupForm">
-      <label for="phone">📱 رقم جوالك للتسجيل المسبق:</label>
-      <input type="tel" id="phone" name="phone" placeholder="05xxxxxxxx" required>
-      <button type="submit">سجّل الآن</button>
-    </form>
-
-    <div id="message"></div>
-  </div>
-  <script src="script.js"></script>
+  <script src="countdown.js"></script>
 </body>
 </html>
