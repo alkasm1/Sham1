@@ -1,5 +1,3 @@
-
-};
 <!DOCTYPE html>
 <html lang="ar">
 <head>
@@ -14,14 +12,19 @@
 
     <div id="countdown"></div>
 
-    <form id="signupForm">
+    <!-- ✅ نموذج التسجيل مع دعم Netlify -->
+    <form name="signup" method="POST" data-netlify="true" action="/thanks.html" id="signupForm">
+      <input type="hidden" name="form-name" value="signup" />
+      
       <label for="phone">📱 رقم جوالك للتسجيل المسبق:</label>
       <input type="tel" id="phone" name="phone" placeholder="05xxxxxxxx" required>
+      
       <button type="submit">سجّل الآن</button>
     </form>
 
     <div id="message"></div>
   </div>
+
   <script src="script.js"></script>
 </body>
 </html>
